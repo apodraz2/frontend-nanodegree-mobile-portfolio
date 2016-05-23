@@ -64,6 +64,11 @@ module.exports = function(grunt) {
       files: ['test/**/*.html']
     },
     imagemin: {
+      jpg: {
+        options: {
+          optimizationLevel: 7
+        }
+      },
       dynamic: {
         files: [{
           expand: true,
